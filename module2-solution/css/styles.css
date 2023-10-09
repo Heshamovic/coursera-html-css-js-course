@@ -1,0 +1,91 @@
+/* CSS file with 3 media queries /
+
+/* Default styles for all devices */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333;
+    padding: 0em;
+}
+
+header {
+    margin: 0 0 2em 0;
+    font-size: 175%;
+    text-align: center;
+    clear: both;
+}
+
+section {
+    font-size: 125%;
+    position: relative;
+    background-color: #999999;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 1em;
+    border: 1px solid #000000;
+}
+
+section > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0em 1em 0em 1em;
+    border: 1px solid #000000;
+    font-weight: bold;
+}
+
+section > p {
+    margin: 2em 1em 1em 1em;
+}
+
+.chicken > div {
+    background-color: #D59898;
+    color: #0D0001;
+}
+
+.beef > div {
+    background-color: #C14543;
+    color: #FEFEFE
+}
+
+.sushi > div {
+    background-color: #E5D198;
+    color: #0B0F0E;
+}
+
+
+/* Media query for laptops and desktops */
+@media (min-width: 992px) {
+
+    .beef {
+        margin-right: 1.5%;
+    }
+    .chicken {
+        margin-right: 1.5%;
+    }
+    section {
+        width: 32%;
+    }
+
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: 49%;
+        clear: right;
+    }
+    .beef {
+        margin-left: 2%;
+    }
+    .sushi {
+        width: 100%;
+    }
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    section {
+        width: 100%;
+    }
+}
