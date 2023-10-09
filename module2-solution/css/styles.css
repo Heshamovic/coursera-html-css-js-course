@@ -23,6 +23,7 @@ section {
     box-sizing: border-box;
     margin-top: 1em;
     border: 3px solid #000000;
+    border-width: 0px 0px 3px 3px;
 }
 
 section > div {
