@@ -23,7 +23,6 @@ section {
     box-sizing: border-box;
     margin-top: 1em;
     border: 3px solid #000000;
-    border-width: 0px 0px 3px 3px;
 }
 
 section > div {
@@ -31,8 +30,9 @@ section > div {
     top: 0;
     right: 0;
     padding: 0em 1em 0em 1em;
-    border: 3px solid #000000;
+    border: solid #000000;
     font-weight: bold;
+    border-width: 0px 0px 3px 3px;
 }
 
 section > p {
